@@ -42,7 +42,7 @@ export function DomainSelection() {
               <p className="text-sm text-muted-foreground mb-4">
                 {domain.description}
               </p>
-              <Link href={`/domain/${domain.name.toLowerCase()}`}>
+              <Link href={`${domain.name.toLowerCase()}`}>
                 <Button className="w-full">Explore {domain.name}</Button>
               </Link>
             </CardContent>
