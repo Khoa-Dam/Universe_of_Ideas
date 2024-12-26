@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { Providers } from "./providers/provider";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Universe Of Ideas",
@@ -16,10 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body>
-        <Header />
-        {children}
+        <Providers>
+
+          <Header />
+          {children}
+        </Providers>
+
       </body>
+
     </html >
   );
 }

@@ -29,7 +29,7 @@ export default function IdeaForm({ onIdeaCreated }: { onIdeaCreated: () => void 
     }
 
     return (
-        <Card>
+        <Card className='w-full'>
             <CardHeader>
                 <CardTitle>Post a New Idea</CardTitle>
             </CardHeader>

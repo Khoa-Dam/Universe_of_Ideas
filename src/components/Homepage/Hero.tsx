@@ -1,6 +1,6 @@
 import Button from "./Button";
 import ScrollingFields from "./ScrollingFields";
-import { Eczar } from '@next/font/google';
+import { Eczar } from "next/font/google";
 import Link from "next/link";
 
 const playwrite = Eczar({

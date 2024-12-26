@@ -2,7 +2,8 @@ import Link from "next/link";
 // import { MobileMenu } from "./mobile-menu";
 import { Button } from "./ui/button";
 
-import { Eczar } from '@next/font/google';
+import { Eczar } from "next/font/google";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const playwrite = Eczar({
   weight: ['400', '700'],
@@ -16,14 +17,14 @@ const Header = () => {
         <Link href="/" className={`text-2xl font-bold ${playwrite.className}`}>
           Universe Ideas
         </Link>
-        <nav className="space-x-4">
+        <nav className="space-x-4 flex ">
           <Link href="/explore" className="text-sm font-medium hover:underline outline-2">
-            Explore
+            <Button className="bg-indigo-900">Explore</Button>
           </Link>
           <Link href="/about" className="text-sm font-medium hover:underline">
-            About
+            <Button className="bg-indigo-900">About</Button>
           </Link>
-          <Button variant="outline">Connect Wallet</Button>
+          <ConnectButton label="Connect Wallet" />
         </nav>
       </div>
     </header>
